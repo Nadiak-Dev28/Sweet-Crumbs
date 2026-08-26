@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Crumbs Bakery | Artisan Cakes &amp; Pastries in Lahore</title>
+<meta name="description" content="Sweet Crumbs Bakery — handcrafted cakes, croissants and pastries baked fresh daily in Lahore, Pakistan. Order custom cakes, cupcakes and more.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Sweet Crumbs Bakery | Lahore">
+<meta property="og:description" content="Baked with love, served with happiness. Handcrafted cakes & pastries in Lahore.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Sweet Crumbs Bakery",
+  "image": "images/hero.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12-C Gulberg III",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "telephone": "+92-300-1234567",
+  "servesCuisine": "Bakery",
+  "priceRange": "PKR 250 - PKR 12000"
+}
+</script>
+<!-- Note: Sweet Crumbs Bakery is a fictional concept brand created for portfolio/demo purposes. -->
+</head>
+<body>
+<svg style="display:none" aria-hidden="true">
+<defs>
+
+<symbol id="icon-cake" viewBox="0 0 24 24">
+  <path d="M4 21v-8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M4 21h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M4 16c1.2-1 2.4 1 3.6 0s2.4-1 3.6 0 2.4 1 3.6 0 2.4-1 3.6 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="12" y1="11" x2="12" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M12 3c0 1-1 1.4-1 2.4 0 .9.5 1.6 1 1.6s1-.7 1-1.6C13 4.4 12 4 12 3z" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="icon-basket" viewBox="0 0 24 24">
+  <path d="M4 9h16l-1.5 10.2a2 2 0 0 1-2 1.8H7.5a2 2 0 0 1-2-1.8L4 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8 9V7a4 4 0 0 1 8 0v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <line x1="9" y1="12" x2="9.5" y2="17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="15" y1="12" x2="14.5" y2="17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="icon-arrow-right" viewBox="0 0 24 24">
+  <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="13,5 20,12 13,19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-arrow-left" viewBox="0 0 24 24">
+  <line x1="20" y1="12" x2="4" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="11,5 4,12 11,19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-arrow-up" viewBox="0 0 24 24">
+  <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="5,11 12,4 19,11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-star" viewBox="0 0 24 24">
+  <polygon points="12,2 14.47,8.6 21.51,8.91 15.99,13.3 17.88,20.09 12,16.2 6.12,20.09 8.01,13.3 2.49,8.91 9.53,8.6" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="icon-star-half" viewBox="0 0 24 24">
+  <polygon points="12,2 14.47,8.6 21.51,8.91 15.99,13.3 17.88,20.09 12,16.2 6.12,20.09 8.01,13.3 2.49,8.91 9.53,8.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+  <clipPath id="halfStarClip"><rect x="0" y="0" width="12" height="24"/></clipPath>
+  <polygon points="12,2 14.47,8.6 21.51,8.91 15.99,13.3 17.88,20.09 12,16.2 6.12,20.09 8.01,13.3 2.49,8.91 9.53,8.6" fill="currentColor" stroke="none" clip-path="url(#halfStarClip)"/>
+</symbol>
+
+<symbol id="icon-heart" viewBox="0 0 24 24">
+  <path d="M12 21s-7.5-4.6-10.2-9.1C.3 9 1.4 5.4 4.6 4.4c2-.6 4 .2 5.4 2 .4.5 1.6.5 2 0 1.4-1.8 3.4-2.6 5.4-2 3.2 1 4.3 4.6 2.8 7.5C19.5 16.4 12 21 12 21z" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="icon-leaf" viewBox="0 0 24 24">
+  <path d="M20 4C10 4 4 10 4 18c0 .6.4 1 1 1 8 0 14-6 14-15 0-.6-.4-1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5 19c3-4 7-8 13-13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="icon-truck" viewBox="0 0 24 24">
+  <rect x="1" y="7" width="13" height="9" rx="1" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M14 10h4l4 3.5V16h-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="6" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="17.5" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="2"/>
+</symbol>
+
+<symbol id="icon-bread" viewBox="0 0 24 24">
+  <path d="M4 20V11a8 5.5 0 0 1 16 0v9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="4" y1="20" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M9 13c0-1.2.7-2 .7-2M14 13c0-1.2.7-2 .7-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+</symbol>
+
+<symbol id="icon-gift" viewBox="0 0 24 24">
+  <rect x="3" y="9" width="18" height="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="5" y="13" width="14" height="8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="12" y1="9" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+  <path d="M12 9C11 6 8 5 7 6.5S8 9 12 9zM12 9c1-3 4-4 5-2.5S16 9 12 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-pin" viewBox="0 0 24 24">
+  <path d="M12 22s7-6.7 7-12a7 7 0 0 0-14 0c0 5.3 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="12" cy="10" r="2.4" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="icon-phone" viewBox="0 0 24 24">
+  <path d="M6.6 3.5l3 1.5-1.2 3.2c1 2.4 2.9 4.3 5.3 5.3l3.2-1.2 1.5 3-2.4 2.2a2 2 0 0 1-1.8.5C9.6 17 7 14.4 6 9.7a2 2 0 0 1 .6-1.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-mail" viewBox="0 0 24 24">
+  <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <polyline points="3.5,6 12,13 20.5,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-clock" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polyline points="12,7 12,12 16,14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-map" viewBox="0 0 24 24">
+  <polygon points="3,5 9,3 15,5 21,3 21,19 15,21 9,19 3,21" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="9" y1="3" x2="9" y2="19" stroke="currentColor" stroke-width="2"/>
+  <line x1="15" y1="5" x2="15" y2="21" stroke="currentColor" stroke-width="2"/>
+</symbol>
+
+<symbol id="icon-send" viewBox="0 0 24 24">
+  <polygon points="3,11 21,3 13,21 11,13 3,11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="11" y1="13" x2="21" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="icon-check-circle" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polyline points="7.5,12.5 10.5,15.5 16.5,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-chevron-down" viewBox="0 0 24 24">
+  <polyline points="5,9 12,16 19,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-chevron-left" viewBox="0 0 24 24">
+  <polyline points="15,5 8,12 15,19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-chevron-right" viewBox="0 0 24 24">
+  <polyline points="9,5 16,12 9,19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-x" viewBox="0 0 24 24">
+  <line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="icon-trash" viewBox="0 0 24 24">
+  <polyline points="3,6 5,6 21,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m2 0-1 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1L6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="10" y1="10" x2="10" y2="17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="14" y1="10" x2="14" y2="17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="icon-plus" viewBox="0 0 24 24">
+  <line x1="12" y1="4" x2="12" y2="20" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="icon-facebook" viewBox="0 0 24 24">
+  <path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5h3l.6-3.5h-3.6V7.8c0-1 .3-1.7 1.7-1.7H15V3z" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="icon-instagram" viewBox="0 0 24 24">
+  <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="icon-tiktok" viewBox="0 0 24 24">
+  <path d="M14 3v10.5a2.8 2.8 0 1 1-2.5-2.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 3c.3 2.4 2 4.2 4.4 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-whatsapp" viewBox="0 0 24 24">
+  <path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M8.5 9.2c.2-.6.5-.6.8-.6h.5c.2 0 .4 0 .6.5l.6 1.4c.1.2 0 .4-.1.6l-.5.5c-.2.2-.2.4-.1.6.4.8 1.5 1.9 2.3 2.3.2.1.4.1.6-.1l.5-.5c.2-.1.4-.2.6-.1l1.4.6c.4.2.5.4.5.6v.5c0 .3 0 .6-.6.8-1.6.6-3.7-.5-5.3-2.1S8 9.8 8.5 9.2z" fill="currentColor" stroke="none"/>
+</symbol>
+
+</defs>
+</svg>
+
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- Decorative loader -->
+<div class="page-loader" id="pageLoader" aria-hidden="true">
+  <div class="loader-icing">
+    <svg viewBox="0 0 200 60" width="140">
+      <path id="icingPath" d="M2 30 Q 25 5, 50 30 T 100 30 T 150 30 T 198 30" fill="none" stroke="#D9A86C" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header>
+  <nav class="navbar" id="navbar" aria-label="Primary">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><svg class="icon"><use href="#icon-cake"></use></svg></span>
+        <span class="logo-text">Sweet Crumbs</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#specialties" class="nav-link">Specialties</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart" aria-expanded="false" aria-controls="cartDrawer">
+          <svg class="icon"><use href="#icon-basket"></use></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home" style="background-image: linear-gradient(rgba(74,44,42,0.18), rgba(74,44,42,0.3)), url('images/hero.jpg');">
+    <div class="hero-decor" aria-hidden="true">
+      <span class="float-item heart">♥</span>
+      <span class="float-item star">✦</span>
+      <span class="float-item sparkle">✧</span>
+      <span class="float-item heart heart-2">♥</span>
+      <span class="float-item star star-2">✦</span>
+      <span class="float-item crumb">●</span>
+      <span class="float-item crumb crumb-2">●</span>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Lahore's Little Kitchen of Joy</p>
+        <h1>Baked With Love,<br>Served With <span class="script-accent">Happiness.</span></h1>
+        <p class="hero-desc">Every layer, swirl and crumb at Sweet Crumbs is handcrafted daily using real butter, real cream and zero shortcuts — from our oven in Gulberg to your table.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">Explore Menu <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+          <a href="#contact" class="btn btn-outline">Order Now</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><svg class="icon"><use href="#icon-star"></use></svg> 4.9 Rating</div>
+          <div class="trust-item"><svg class="icon"><use href="#icon-leaf"></use></svg> Fresh Daily</div>
+          <div class="trust-item"><svg class="icon"><use href="#icon-truck"></use></svg> Lahore Delivery</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-badge" data-reveal>
+      <span class="badge-num">10+</span>
+      <span class="badge-label">Years of<br>Baking Love</span>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true"><svg class="icon"><use href="#icon-chevron-down"></use></svg></div>
+  </section>
+
+
+  <!-- ============ FEATURED PRODUCTS / MENU ============ -->
+  <section class="menu" id="menu">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Our Menu</p>
+      <h2>Fresh From The Oven</h2>
+      <p class="section-sub">Six signature bakes our regulars can never say no to.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card" data-reveal
+        data-id="chocolate-cake" data-name="Chocolate Truffle Cake" data-price="3200" data-img="images/chocolate-cake.jpg">
+        <div class="product-img">
+          <img src="images/chocolate-cake.jpg" alt="Triple-layer chocolate truffle cake with dark chocolate shards and gold leaf">
+          <span class="product-tag">Bestseller</span>
+        </div>
+        <div class="product-body">
+          <div class="product-rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star-half"></use></svg> <span>(212)</span></div>
+          <h3>Chocolate Truffle Cake</h3>
+          <p>Rich Belgian dark chocolate sponge, whipped ganache, cocoa pearls.</p>
+          <div class="product-footer">
+            <span class="price">PKR 3,200</span>
+            <button class="add-cart-btn" aria-label="Add Chocolate Truffle Cake to cart"><svg class="icon"><use href="#icon-plus"></use></svg> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal
+        data-id="red-velvet" data-name="Red Velvet Rose Cake" data-price="3400" data-img="images/red-velvet.jpg">
+        <div class="product-img">
+          <img src="images/red-velvet.jpg" alt="Red velvet cake with cream cheese frosting topped with a fresh rose">
+        </div>
+        <div class="product-body">
+          <div class="product-rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg> <span>(178)</span></div>
+          <h3>Red Velvet Rose Cake</h3>
+          <p>Velvety cocoa sponge, tangy cream cheese frosting, white chocolate curls.</p>
+          <div class="product-footer">
+            <span class="price">PKR 3,400</span>
+            <button class="add-cart-btn" aria-label="Add Red Velvet Rose Cake to cart"><svg class="icon"><use href="#icon-plus"></use></svg> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal
+        data-id="croissant" data-name="Butter Croissant" data-price="380" data-img="images/croissant.jpg">
+        <div class="product-img">
+          <img src="images/croissant.jpg" alt="Flaky golden butter croissants on a plate">
+        </div>
+        <div class="product-body">
+          <div class="product-rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg> <span>(340)</span></div>
+          <h3>Butter Croissant</h3>
+          <p>72-hour laminated dough, golden and impossibly flaky. Baked hourly.</p>
+          <div class="product-footer">
+            <span class="price">PKR 380</span>
+            <button class="add-cart-btn" aria-label="Add Butter Croissant to cart"><svg class="icon"><use href="#icon-plus"></use></svg> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal
+        data-id="cupcakes" data-name="Signature Cupcakes (Box of 6)" data-price="1500" data-img="images/cupcakes.jpg">
+        <div class="product-img">
+          <img src="images/cupcakes.jpg" alt="Assorted frosted cupcakes with pink, cream and chocolate swirls">
+        </div>
+        <div class="product-body">
+          <div class="product-rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star-half"></use></svg> <span>(156)</span></div>
+          <h3>Signature Cupcakes</h3>
+          <p>Box of six — vanilla bean, hazelnut mocha and strawberry rose swirls.</p>
+          <div class="product-footer">
+            <span class="price">PKR 1,500</span>
+            <button class="add-cart-btn" aria-label="Add Signature Cupcakes to cart"><svg class="icon"><use href="#icon-plus"></use></svg> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal
+        data-id="cheesecake" data-name="Strawberry Cheesecake" data-price="2800" data-img="images/cheesecake.jpg">
+        <div class="product-img">
+          <img src="images/cheesecake.jpg" alt="Baked strawberry cheesecake topped with fresh strawberries and mint">
+        </div>
+        <div class="product-body">
+          <div class="product-rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg> <span>(129)</span></div>
+          <h3>Strawberry Cheesecake</h3>
+          <p>Creamy baked cheesecake, buttery biscuit base, fresh strawberry compote.</p>
+          <div class="product-footer">
+            <span class="price">PKR 2,800</span>
+            <button class="add-cart-btn" aria-label="Add Strawberry Cheesecake to cart"><svg class="icon"><use href="#icon-plus"></use></svg> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal
+        data-id="cinnamon-rolls" data-name="Cinnamon Rolls (Set of 4)" data-price="950" data-img="images/cinnamon-rolls.jpg">
+        <div class="product-img">
+          <img src="images/cinnamon-rolls.jpg" alt="Warm cinnamon rolls drizzled with cream cheese icing">
+        </div>
+        <div class="product-body">
+          <div class="product-rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star-half"></use></svg> <span>(98)</span></div>
+          <h3>Cinnamon Rolls</h3>
+          <p>Set of four — soft brioche swirls, Ceylon cinnamon, cream cheese glaze.</p>
+          <div class="product-footer">
+            <span class="price">PKR 950</span>
+            <button class="add-cart-btn" aria-label="Add Cinnamon Rolls to cart"><svg class="icon"><use href="#icon-plus"></use></svg> Add</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-visual" data-reveal>
+        <img src="images/about.jpg" alt="Baker decorating a naked cake with fresh raspberries and gold leaf in the Sweet Crumbs kitchen">
+        <div class="about-visual-accent" aria-hidden="true"></div>
+      </div>
+      <div class="about-copy" data-reveal>
+        <p class="eyebrow">Our Story</p>
+        <h2>From Our Little Kitchen<br>To Your Sweetest Moments</h2>
+        <p>Sweet Crumbs began in 2014 as a single home oven in Gulberg, Lahore, baking birthday cakes for neighbours. A decade later, we still measure success the same way — one happy bite at a time. Every recipe is tested, tasted and tweaked by hand before it ever reaches a display case.</p>
+        <p>No preservatives, no shortcuts, no rushed mornings. Just real butter, real fruit, and a team that genuinely loves what leaves this kitchen.</p>
+
+        <div class="stats" id="statsBlock">
+          <div class="stat">
+            <span class="stat-num" data-target="10" data-suffix="+">0</span>
+            <span class="stat-label">Years of Baking</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="25" data-suffix="K+">0</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="50" data-suffix="+">0</span>
+            <span class="stat-label">Delicious Creations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIALTIES ============ -->
+  <section class="specialties" id="specialties">
+    <div class="section-head light" data-reveal>
+      <p class="eyebrow">What We're Known For</p>
+      <h2>Our Specialties</h2>
+    </div>
+
+    <div class="specialty-grid">
+      <div class="specialty-card" data-reveal>
+        <div class="specialty-icon"><svg class="icon"><use href="#icon-cake"></use></svg></div>
+        <h3>Custom Cakes</h3>
+        <p>Tell us the flavour, theme and occasion — we'll design a cake that's entirely yours.</p>
+      </div>
+      <div class="specialty-card" data-reveal>
+        <div class="specialty-icon"><svg class="icon"><use href="#icon-bread"></use></svg></div>
+        <h3>Fresh Pastries</h3>
+        <p>Croissants, danishes and rolls, laminated by hand and baked in small batches daily.</p>
+      </div>
+      <div class="specialty-card" data-reveal>
+        <div class="specialty-icon"><svg class="icon"><use href="#icon-heart"></use></svg></div>
+        <h3>Wedding Cakes</h3>
+        <p>Tiered, floral, elegant — statement centrepieces for your most important day.</p>
+      </div>
+      <div class="specialty-card" data-reveal>
+        <div class="specialty-icon"><svg class="icon"><use href="#icon-gift"></use></svg></div>
+        <h3>Birthday Cakes</h3>
+        <p>Playful, personal, and just the right amount of extra for another year around the sun.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Gallery</p>
+      <h2>A Peek Into Our Kitchen</h2>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <button class="gallery-item g1" data-reveal data-img="images/interior.jpg" data-caption="Our sunlit bakery counter in Gulberg, Lahore">
+        <img src="images/interior.jpg" alt="Sweet Crumbs Bakery shop interior with pastry display counter">
+      </button>
+      <button class="gallery-item g2" data-reveal data-img="images/pastry-display.jpg" data-caption="Our daily pastry and cake display">
+        <img src="images/pastry-display.jpg" alt="Display counter of macarons, tarts and croissants">
+      </button>
+      <button class="gallery-item g3" data-reveal data-img="images/custom-cake.jpg" data-caption="A custom floral celebration cake">
+        <img src="images/custom-cake.jpg" alt="Custom cake decorated with fresh roses and gold leaf">
+      </button>
+      <button class="gallery-item g4" data-reveal data-img="images/bread-loaves.jpg" data-caption="Freshly baked sourdough loaves">
+        <img src="images/bread-loaves.jpg" alt="Freshly baked artisan sourdough loaves on a wooden board">
+      </button>
+      <button class="gallery-item g5" data-reveal data-img="images/about.jpg" data-caption="Handcrafted, one cake at a time">
+        <img src="images/about.jpg" alt="Baker piping details onto a fresh cake">
+      </button>
+      <button class="gallery-item g6" data-reveal data-img="images/hero.jpg" data-caption="Our celebration counter spread">
+        <img src="images/hero.jpg" alt="Wedding cake and croissants on the Sweet Crumbs counter">
+      </button>
+      <button class="gallery-item g7" data-reveal data-img="images/cupcakes.jpg" data-caption="Our signature frosted cupcakes">
+        <img src="images/cupcakes.jpg" alt="Assorted frosted cupcakes with pink, cream and chocolate swirls">
+      </button>
+      <button class="gallery-item g8" data-reveal data-img="images/cheesecake.jpg" data-caption="Strawberry cheesecake, baked fresh">
+        <img src="images/cheesecake.jpg" alt="Baked strawberry cheesecake topped with fresh strawberries and mint">
+      </button>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image preview"><svg class="icon"><use href="#icon-x"></use></svg></button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image"><svg class="icon"><use href="#icon-chevron-left"></use></svg></button>
+    <figure>
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next image"><svg class="icon"><use href="#icon-chevron-right"></use></svg></button>
+  </div>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews" id="reviews">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Testimonials</p>
+      <h2>What Lahore Is Saying</h2>
+    </div>
+
+    <div class="testimonial-wrap" data-reveal>
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-slide">
+          <div class="stars"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div>
+          <p class="quote">"The red velvet cake I ordered for my mother's birthday was the best she's ever had — moist, not too sweet, and the roses on top made it feel so special."</p>
+          <div class="reviewer">
+            <span class="avatar">HA</span>
+            <div><strong>Hina Ahmed</strong><span>Gulberg, Lahore</span></div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="stars"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div>
+          <p class="quote">"Their croissants genuinely rival what I had in Paris. Flaky, buttery, and always fresh when I stop by in the morning."</p>
+          <div class="reviewer">
+            <span class="avatar">MK</span>
+            <div><strong>Mohsin Khan</strong><span>DHA, Lahore</span></div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="stars"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star-half"></use></svg></div>
+          <p class="quote">"We ordered a custom wedding cake and it exceeded every expectation. The team understood exactly what we wanted after one conversation."</p>
+          <div class="reviewer">
+            <span class="avatar">SF</span>
+            <div><strong>Sana Farooq</strong><span>Model Town, Lahore</span></div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="stars"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div>
+          <p class="quote">"The cinnamon rolls are dangerously good. I order a box every Sunday now — my whole family looks forward to it."</p>
+          <div class="reviewer">
+            <span class="avatar">BR</span>
+            <div><strong>Bilal Raza</strong><span>Johar Town, Lahore</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-controls">
+        <button id="testPrev" aria-label="Previous review"><svg class="icon"><use href="#icon-arrow-left"></use></svg></button>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+        <button id="testNext" aria-label="Next review"><svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFER BANNER ============ -->
+  <section class="offer">
+    <div class="offer-container" data-reveal>
+      <div class="offer-copy">
+        <p class="offer-eyebrow">Sweet Deal of the Day <span aria-hidden="true">🍰</span></p>
+        <h2>Get 20% OFF on Selected Cakes Today</h2>
+        <p>Use code <strong>SWEET20</strong> at checkout. Ends tonight at midnight.</p>
+      </div>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div class="count-box"><span id="cdHours">00</span><label>Hours</label></div>
+        <div class="count-sep">:</div>
+        <div class="count-box"><span id="cdMinutes">00</span><label>Minutes</label></div>
+        <div class="count-sep">:</div>
+        <div class="count-box"><span id="cdSeconds">00</span><label>Seconds</label></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Get In Touch</p>
+      <h2>Visit or Order With Us</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <div class="info-item">
+          <svg class="icon"><use href="#icon-pin"></use></svg>
+          <div><strong>Address</strong><p>12-C Gulberg III, Lahore, Punjab, Pakistan</p></div>
+        </div>
+        <div class="info-item">
+          <svg class="icon"><use href="#icon-phone"></use></svg>
+          <div><strong>Phone</strong><p>+92 300 1234567</p></div>
+        </div>
+        <div class="info-item">
+          <svg class="icon"><use href="#icon-mail"></use></svg>
+          <div><strong>Email</strong><p>hello@sweetcrumbs.pk</p></div>
+        </div>
+        <div class="info-item">
+          <svg class="icon"><use href="#icon-clock"></use></svg>
+          <div><strong>Hours</strong><p>Mon–Sat: 9am – 10pm<br>Sunday: 11am – 8pm</p></div>
+        </div>
+        <div class="map-placeholder">
+          <svg class="icon"><use href="#icon-map"></use></svg>
+          <span>Map — 12-C Gulberg III, Lahore</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cfName">Full Name</label>
+            <input type="text" id="cfName" name="name" placeholder="Your name">
+            <span class="error-msg" id="err-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="cfPhone">Phone</label>
+            <input type="tel" id="cfPhone" name="phone" placeholder="03XX XXXXXXX">
+            <span class="error-msg" id="err-phone"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cfEmail">Email</label>
+          <input type="email" id="cfEmail" name="email" placeholder="you@example.com">
+          <span class="error-msg" id="err-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="cfMessage">Message</label>
+          <textarea id="cfMessage" name="message" rows="5" placeholder="Tell us about your order or occasion..."></textarea>
+          <span class="error-msg" id="err-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message <svg class="icon"><use href="#icon-send"></use></svg></button>
+        <div class="form-success" id="formSuccess" role="status" hidden>
+          <svg class="icon"><use href="#icon-check-circle"></use></svg> Thank you! Your message has been sent — we'll be in touch shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-header">
+    <h3><svg class="icon"><use href="#icon-basket"></use></svg> Your Cart</h3>
+    <button class="cart-close" id="cartClose" aria-label="Close cart"><svg class="icon"><use href="#icon-x"></use></svg></button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">Your cart is empty. Time to treat yourself 🍩</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">PKR 0</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><svg class="icon"><use href="#icon-cake"></use></svg></span>
+        <span class="logo-text">Sweet Crumbs</span>
+      </a>
+      <p>Handcrafted cakes and pastries, baked fresh daily in Lahore since 2014.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"></use></svg></a>
+        <a href="#" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"></use></svg></a>
+        <a href="#" aria-label="TikTok"><svg class="icon"><use href="#icon-tiktok"></use></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg class="icon"><use href="#icon-whatsapp"></use></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Opening Hours</h4>
+      <ul class="hours-list">
+        <li><span>Mon – Sat</span><span>9am – 10pm</span></li>
+        <li><span>Sunday</span><span>11am – 8pm</span></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><svg class="icon"><use href="#icon-pin"></use></svg> 12-C Gulberg III, Lahore</li>
+        <li><svg class="icon"><use href="#icon-phone"></use></svg> +92 300 1234567</li>
+        <li><svg class="icon"><use href="#icon-mail"></use></svg> hello@sweetcrumbs.pk</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Sweet Crumbs Bakery. All rights reserved. <em>A fictional concept brand created for portfolio purposes.</em></p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg class="icon"><use href="#icon-whatsapp"></use></svg>
+</a>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><svg class="icon"><use href="#icon-arrow-up"></use></svg></button>
+
+<!-- Toast for add-to-cart -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
